@@ -81,18 +81,15 @@ const TestimonialCarousel = () => {
   return (
     <div className="py-8 px-4 overflow-hidden">
       
-      <h2 className="text-2xl font-bold  mb-6 text-blue-500">
+      <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-6 text-green-800 ">
         What Our Clients Say
       </h2>
      
-      <Slider
-        {...settings}
-        className="gap-6" 
-      >
+      <Slider {...settings} className="gap-6">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-md flex flex-col justify-between items-center p-6 text-center"
+            className="bg-white shadow-lg rounded-md flex flex-col justify-between items-center p-6  text-center"
             style={{
               width: "280px", 
               height: "280px", 
@@ -104,7 +101,7 @@ const TestimonialCarousel = () => {
               {testimonial.feedback}
             </p>
             
-            <h3 className="font-semibold text-lg text-blue-500">
+            <h3 className="font-semibold text-lg text-green-700">
               {testimonial.name}
             </h3>
            

@@ -42,31 +42,32 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-10">
-        <h2 className="text-2xl font-bold mx-5 mb-6 text-blue-500">
-          Frequently Asked Questions
-        </h2>
-      <div className=" md:px-28">
-        
-        <div className="space-y-6 p-5 bg-blue-900">
+    <section className=" py-10">
+      <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mx-5 mb-6 text-green-800">
+        Frequently Asked Questions
+      </h2>
+      <div className="md:px-28">
+        <div className="space-y-6 p-5 shadow-lg rounded-lg">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className=" bg-blue-900 rounded-lg overflow-hidden"
+              className="rounded-lg overflow-hidden border border-green-700"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left px-4 py-3 flex justify-between items-center bg-white transition"
+                className="w-full text-left px-4 py-3 flex justify-between items-center bg-green-50 transition"
               >
-                <span className="text-blue-600 font-medium text-[12px] md:text-[14px]">{item.question}</span>
+                <span className="text-green-800 font-medium text-sm md:text-base">
+                  {item.question}
+                </span>
                 {activeIndex === index ? (
-                  <FiChevronUp className="text-blue-700 h-5 w-5" />
+                  <FiChevronUp className="text-green-600 h-5 w-5" />
                 ) : (
-                  <FiChevronDown className="text-blue-900 h-5 w-5" />
+                  <FiChevronDown className="text-green-600 h-5 w-5" />
                 )}
               </button>
               {activeIndex === index && (
-                <div className="px-4 py-3 text-[12px] md:text-[14px] text-white">
+                <div className="px-4 py-3 text-sm md:text-base text-gray-700 bg-green-50">
                   {item.answer}
                 </div>
               )}
