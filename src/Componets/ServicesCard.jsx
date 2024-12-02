@@ -54,7 +54,7 @@ const features = [
 
 const ServicesCard = () => {
   return (
-    <div className="py-8 px-4">
+    <div className="py-8 px-4 md:px-12">
       <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-6 text-green-800">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, index) => (

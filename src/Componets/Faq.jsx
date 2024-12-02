@@ -42,7 +42,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className=" py-10">
+    <section className=" py-10 px-4 md:px-12">
       <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mx-5 mb-6 text-green-800">
         Frequently Asked Questions
       </h2>

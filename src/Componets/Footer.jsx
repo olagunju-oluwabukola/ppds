@@ -4,7 +4,7 @@ import { FiTwitter, FiLinkedin, FiFacebook, FiMessageCircle } from "react-icons/
 const Footer = () => {
   return (
     <footer className="bg-green-900 text-gray-200 py-10">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>

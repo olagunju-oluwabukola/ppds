@@ -79,7 +79,7 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="py-8 px-4 overflow-hidden">
+    <div className="py-8 px-4 md:px-12 overflow-hidden">
       
       <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-6 text-green-800 ">
         What Our Clients Say

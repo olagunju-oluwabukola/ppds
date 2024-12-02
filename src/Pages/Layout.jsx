@@ -7,7 +7,7 @@ const Layout = () => {
       <div className="fixed z-50 w-full">
         <Navbar />
       </div>
-      <div className="flex-grow mt-[2.7rem] py-2 md:mt-[3.2rem] bg-green-50">
+      <div className="flex-grow mt-[2.7rem] py-2 md:mt-[3.2rem] bg-gray-50">
         <Outlet />
       </div>
       <Footer />
