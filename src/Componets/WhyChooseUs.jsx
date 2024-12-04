@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
     ];
   
     return (
-      <section className="py-16">
+      <section className="py-16 px-6 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="md:text-left lg:w-3/5">
           <h2 className=" text-2xl md:text-2xl lg:text-3xl font-bold text-green-800 mb-4 " >Why choose us?</h2>

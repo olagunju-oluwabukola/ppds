@@ -20,26 +20,26 @@ const Footer = () => {
             <ul className="space-y-2 text-[10px] md:text-[12px]">
               <li>
                 <NavLink
-                  to="/services"
+                  to="/about"
                   className="hover:text-brown-400 transition duration-300"
                 >
-                  Services
+                  About
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/pricing"
+                  to="/services/training"
                   className="hover:text-brown-400 transition duration-300"
                 >
-                  Pricing
+                  Training
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/blog"
+                  to="/services/consultation"
                   className="hover:text-brown-400 transition duration-300"
                 >
-                  Blog
+                  Consultation
                 </NavLink>
               </li>
               <li>
