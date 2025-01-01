@@ -55,6 +55,10 @@ import {
   const ServicesCard = () => {
     return (
       <div className="py-8 px-4 md:px-12">
+         <div className="text-center mt-10 md:mb-20">
+        <h1 className="text-4xl md:text-5xl font-bold text-black">Consultation Service</h1>
+        <div className="mt-5 h-1 w-20 bg-green-900 mx-auto"></div>
+      </div>
         <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-6 text-green-800">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (

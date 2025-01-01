@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import img from "../assets/MacBook Air - 18.svg";
+import img from "../assets/ppds1.jpg";
+import img2 from "../assets/ppds2.jpg";
+import img3 from "../assets/ppds3.jpg";
+import img4 from "../assets/ppds4.jpg";
 
 const Slider = () => {
   const slides = [
@@ -7,33 +10,34 @@ const Slider = () => {
       id: 1,
       title: "Formulate, Design and Execute Your Research",
       description:
-        "Create an account, it's quick, simple, and free. Select services you want, get connected to our experts, and get your job done as fast as possible.",
-      buttonText: "Tell Us What You Need",
+        "Discover how we provide end-to-end research solutions—from tool design and field data collection to analysis and expert report writing—perfectly aligned with your research objectives, just as we’ve done for over 500 local and international organizations.",
+      buttonText: "Learn More",
       imageUrl: img,
     },
-    {
-      id: 2,
-      title: "Drive Insight with Cutting-Edge Analytics",
-      description:
-        "Our platform connects you with top professionals across various fields to meet your unique needs.",
-      buttonText: "Explore Services",
-      imageUrl: img,
-    },
+    
     {
       id: 3,
       title: "Get World-Class Analytics Training",
       description:
-        "We provide tailored solutions to help you accomplish your objectives efficiently.",
+        "Transform your skills with our globally recognized training programs. At Project Partner Data Solutions, we’ve helped over 1,000 clients and students master research, data management, and analytics. Whether you're a beginner or looking to refine your expertise, our simplified, step-by-step courses are designed to make you a pro. Ready to elevate your career? ",
       buttonText: "Get Started Now",
-      imageUrl: img,
+      imageUrl: img4,
+    },
+    {
+      id: 2,
+      title: "Kickstart Your Career with Our Internship Programme ",
+      description:
+        "Gain hands-on experience in research, data management, and analytics. Work on real projects, receive expert mentorship, and make a meaningful impact. ",
+      buttonText: "Apply for Internship",
+      imageUrl: img3,
     },
     {
       id: 4,
       title: "Join Our Community",
       description:
-        "Become part of a growing network of experts and users working together for success.",
-      buttonText: "Sign Up Today",
-      imageUrl: img,
+        "Connect with professionals in research, data management, and analytics to access exclusive resources and networking opportunities. ",
+      buttonText: "Join Our Community",
+      imageUrl: img2,
     },
   ];
 

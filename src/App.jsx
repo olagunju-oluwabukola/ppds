@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import Training from "./Pages/Training";
 import Consultation from "./Pages/Consultation";
 import Blog from "./Pages/Blog";
+import ContactUsPage from "./Pages/ContactUsPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,7 +33,11 @@ function App() {
         {
           path:'/blog',
           element:<Blog/>
-        }
+        },
+        {
+          path:'/contact',
+          element:<ContactUsPage/>
+        },
         
         
       ],
@@ -46,3 +51,6 @@ function App() {
 }
 
 export default App;
+
+
+
