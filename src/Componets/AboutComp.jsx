@@ -9,12 +9,12 @@ const AboutUs = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-12 px-6">
       
-      <div className="text-center mb-20">
+      <div className="text-center mb-5">
         <h1 className="text-4xl md:text-5xl font-bold text-black"><span className='text-green-900'>About</span> Us</h1>
         <div className="mt-5 h-1 w-20 bg-green-900 mx-auto"></div>
       </div>
       
-<p className='w-auto mb-10 md:text-center md:my-10 md:mx-10'>Welcome to Project Partner Data Solutions (PPDS), a trusted partner in data-driven 
+<p className='w-auto mb-10 text-center md:my-10 md:mx-10'>Welcome to Project Partner Data Solutions (PPDS), a trusted partner in data-driven 
   insights, research consultancy, and capacity building. At PPDS, we are passionate about transforming data into actionable knowledge, empowering individuals and organisations to achieve their goals through innovative solutions.</p>
       
       <div className="max-w-5xl mx-auto space-y-20 text-gray-700">
