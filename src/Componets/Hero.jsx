@@ -34,7 +34,7 @@ const Slider = () => {
         "Gain hands-on experience in research, data management, and analytics. Work on real projects, receive expert mentorship, and make a meaningful impact.",
       buttonText: "Apply for Internship",
       imageUrl: img3,
-      path: "services/consultation", 
+      path: "/services/internship", 
     },
     {
       id: 4,

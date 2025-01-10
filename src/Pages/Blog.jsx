@@ -32,7 +32,7 @@ const BlogPage = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Header */}
-      <header className="bg-blue-600 text-white py-12">
+      <header className="bg-green-900 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold">Data Analysis Blog</h1>
           <p className="mt-2 text-lg">Insights, tips, and resources for mastering data analysis.</p>
@@ -59,7 +59,7 @@ const BlogPage = () => {
                 <h3 className="text-lg font-semibold mb-2">{post.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{post.date}</p>
                 <p className="text-gray-800 mb-4">{post.excerpt}</p>
-                <button className="text-blue-600 hover:underline">
+                <button className="text-green-600 hover:underline">
                   Read More →
                 </button>
               </div>
@@ -70,10 +70,10 @@ const BlogPage = () => {
 
       {/* Pagination */}
       <footer className="flex justify-center py-8">
-        <button className="px-4 py-2 bg-blue-600 text-white rounded mx-2">
+        <button className="px-4 py-2 bg-green-600 text-white rounded mx-2">
           Previous
         </button>
-        <button className="px-4 py-2 bg-blue-600 text-white rounded mx-2">
+        <button className="px-4 py-2 bg-green-600 text-white rounded mx-2">
           Next
         </button>
       </footer>

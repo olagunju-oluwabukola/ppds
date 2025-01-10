@@ -27,7 +27,7 @@ function App() {
           element:<Training/>
         },
         {
-          path:'/services/consultation',
+          path:'/services/internship',
           element:<Consultation/>
         },
         {

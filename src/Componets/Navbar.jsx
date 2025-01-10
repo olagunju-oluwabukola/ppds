@@ -65,10 +65,10 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/services/consultation"
+                    to="/services/internship"
                     className="block px-4 py-2 text-white hover:text-brown-400 transition duration-300"
                   >
-                    Consulting
+                   Internship
                   </NavLink>
                 </li>
               </ul>
@@ -133,11 +133,11 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/services/consulting"
+              to="/services/internship"
               className="text-white hover:text-brown-400 transition duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Consulting
+             Internship
             </NavLink>
           </li>
           <li>

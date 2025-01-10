@@ -17,7 +17,7 @@ const TrainingPrograms = () => {
     <div className="bg-gray-100 min-h-screen py-12 px-4 md:px-12">
      <div className="text-center pt-6 md:pt-12 md:pb-10">
         <h1 className="text-4xl md:text-5xl font-bold text-black"><span className='text-green-900'>Training</span> Solutions</h1>
-        <div className="mt-5 h-1 w-20 bg-green-900 mx-auto"></div>
+        <div className="mt-5 h-1 w-20 bg-green-900 mx-auto mb-5"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {programs.map((program, index) => (
