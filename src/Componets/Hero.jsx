@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; 
 import img from "../assets/ppds1.jpg";
 import img2 from "../assets/ppds2.jpg";
 import img3 from "../assets/ppds3.jpg";
 import img4 from "../assets/ppds4.jpg";
 
 const Slider = () => {
+  const navigate = useNavigate();
+
   const slides = [
     {
       id: 1,
@@ -13,31 +16,34 @@ const Slider = () => {
         "Discover how we provide end-to-end research solutions—from tool design and field data collection to analysis and expert report writing—perfectly aligned with your research objectives, just as we’ve done for over 500 local and international organizations.",
       buttonText: "Learn More",
       imageUrl: img,
+      path: "/contact", 
     },
-    
     {
       id: 3,
       title: "Get World-Class Analytics Training",
       description:
-        "Transform your skills with our globally recognized training programs. At Project Partner Data Solutions, we’ve helped over 1,000 clients and students master research, data management, and analytics. Whether you're a beginner or looking to refine your expertise, our simplified, step-by-step courses are designed to make you a pro. Ready to elevate your career? ",
+        "Transform your skills with our globally recognized training programs. At Project Partner Data Solutions, we’ve helped over 1,000 clients and students master research, data management, and analytics. Whether you're a beginner or looking to refine your expertise, our simplified, step-by-step courses are designed to make you a pro. Ready to elevate your career?",
       buttonText: "Get Started Now",
       imageUrl: img4,
+      path: "/services/training", 
     },
     {
       id: 2,
-      title: "Kickstart Your Career with Our Internship Programme ",
+      title: "Kickstart Your Career with Our Internship Programme",
       description:
-        "Gain hands-on experience in research, data management, and analytics. Work on real projects, receive expert mentorship, and make a meaningful impact. ",
+        "Gain hands-on experience in research, data management, and analytics. Work on real projects, receive expert mentorship, and make a meaningful impact.",
       buttonText: "Apply for Internship",
       imageUrl: img3,
+      path: "services/consultation", 
     },
     {
       id: 4,
       title: "Join Our Community",
       description:
-        "Connect with professionals in research, data management, and analytics to access exclusive resources and networking opportunities. ",
+        "Connect with professionals in research, data management, and analytics to access exclusive resources and networking opportunities.",
       buttonText: "Join Our Community",
       imageUrl: img2,
+      path: "/about", 
     },
   ];
 
@@ -57,7 +63,11 @@ const Slider = () => {
         <div
           key={slide.id}
           className={`absolute inset-0 w-full h-full flex items-center text-left transition-transform duration-[1000ms] ease-in-out ${
-            index === currentSlide ? "translate-x-0" : index < currentSlide ? "-translate-x-full" : "translate-x-full"
+            index === currentSlide
+              ? "translate-x-0"
+              : index < currentSlide
+              ? "-translate-x-full"
+              : "translate-x-full"
           }`}
           style={{
             backgroundImage: `url(${slide.imageUrl})`,
@@ -72,7 +82,10 @@ const Slider = () => {
             <p className="text-sm md:text-lg lg:text-xl mb-4 md:mb-6 max-w-2xl">
               {slide.description}
             </p>
-            <button className="bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-lg shadow-md transition-all w-64 duration-300">
+            <button
+              className="bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-lg shadow-md transition-all w-64 duration-300"
+              onClick={() => navigate(slide.path)} 
+            >
               {slide.buttonText}
             </button>
           </div>
@@ -83,7 +96,7 @@ const Slider = () => {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`h-2 w-2 md:w-3 md:h-3 rounded-full  transition-all ${
+            className={`h-2 w-2 md:w-3 md:h-3 rounded-full transition-all ${
               index === currentSlide ? "bg-green-500" : "bg-green-100"
             }`}
             onClick={() => setCurrentSlide(index)}

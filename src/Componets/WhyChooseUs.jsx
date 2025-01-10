@@ -12,19 +12,19 @@ const WhyChooseUs = () => {
       { src: img2, alt: "SAP" },
       { src: img3, alt: "ServiceNow" },
       { src: img4, alt: "CN" },
-      { src: img5, alt: "Kronos" },
+      { src: img8, alt: "Kronos" },
       { src: img6, alt: "UKG" },
       { src: img7, alt: "Tim Hortons" },
-      { src: img8, alt: "Skip the Dishes" },
+      { src: img5, alt: "Skip the Dishes" },
      
     ];
   
     return (
       <section className="py-16 px-6 md:px-6">
         <div className="max-w-6xl mx-4 md:mx-8">
-          <div className="md:text-left lg:w-3/5">
+          <div className="md:text-left ">
           <h2 className=" text-2xl md:text-2xl lg:text-3xl font-bold text-green-800 mb-4" >Why choose us?</h2>
-          <p className="text-[13px] md:text-[14px]  mb-8">
+          <p className="text-[13px] md:text-lg  mb-8 ">
           At Project Partner Data Solutions, we transform complex data into actionable insights by delivering end-to-end research solutions that have empowered over 600 clients across local and international platforms through our cutting-edge research methodologies and comprehensive services. With more than a decade of expertise, we've successfully completed over 800 projects, trained 1,000+ students, and remain committed to driving research excellence by building our clients' competencies and achieving their most critical research objectives.
           </p>
           </div>

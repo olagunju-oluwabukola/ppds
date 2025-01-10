@@ -4,54 +4,36 @@ import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
-    name: "John Doe",
-    position: "CEO, TechCorp",
-    feedback:
-      "The team at DataInsight transformed our data into actionable insights. Highly recommended!",
+    name: "Dr. Akanni",
+    position: "",
+    feedback: "I enjoyed today's class. My motivation is rekindled.",
   },
   {
-    name: "Jane Smith",
-    position: "Marketing Director, AdWorld",
+    name: "Mr. Levi",
+    position: "",
     feedback:
-      "Their analysis helped us understand our audience like never before. A game-changer for our campaigns!",
+      "I love your teaching technique sir and your patience with us. God bless you sir.",
   },
   {
-    name: "Alice Johnson",
-    position: "Operations Manager, SupplyPro",
+    name: "Markson",
+    position: "",
     feedback:
-      "Thanks to their detailed reports, we streamlined our operations and saved costs significantly.",
+      "This training is not something that one would miss. It is very timely and impactful.",
   },
   {
-    name: "Michael Brown",
-    position: "CFO, FinServe",
+    name: "Mercy Corps Staff",
+    position: "",
     feedback:
-      "Their financial data analysis gave us the clarity we needed to make informed decisions.",
+      "The training was participatory, and I learnt coding in another way as well as the use of MAXQDA. The software will help me to organize my work well as well as presentation.",
   },
   {
-    name: "Emily Davis",
-    position: "Product Manager, InnovateLabs",
+    name: "Mercy Corps Staff",
+    position: "",
     feedback:
-      "The predictive analytics they provided helped us launch our product at the perfect time.",
-  },
-  {
-    name: "David Wilson",
-    position: "HR Head, PeopleFirst",
-    feedback:
-      "Their workforce analytics improved employee engagement and retention. Fantastic work!",
-  },
-  {
-    name: "Sophia Martinez",
-    position: "Sales Manager, GrowBiz",
-    feedback:
-      "With their sales data analysis, we identified key markets and boosted revenue by 30%.",
-  },
-  {
-    name: "James Anderson",
-    position: "IT Director, CyberSecure",
-    feedback:
-      "Their data visualization tools made complex information easy to understand. Excellent service!",
+      "The training has been very helpful for my understanding of qualitative data analysis. The use of practical examples is of vital help to me.",
   },
 ];
+
 
 const TestimonialCarousel = () => {
   const settings = {

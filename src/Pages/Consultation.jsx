@@ -1,87 +1,62 @@
-import {
-    FaFlask,
-    FaPlane,
-    FaMapMarkedAlt,
-    FaDatabase,
-    FaChartLine,
-    FaHandshake,
-    FaChartPie,
-    FaPencilRuler,
-  } from "react-icons/fa";
-  
-  const features = [
-    {
-      title: "Research Formulation",
-      description: "Develop and structure your research ideas effectively.",
-      icon: <FaFlask />,
-    },
-    {
-      title: "Pilot Study",
-      description: "Conduct preliminary testing to refine your approach.",
-      icon: <FaPlane />,
-    },
-    {
-      title: "Field Data Collection",
-      description: "Gather accurate data directly from the field.",
-      icon: <FaMapMarkedAlt />,
-    },
-    {
-      title: "Data Management",
-      description: "Organize and secure your research data efficiently.",
-      icon: <FaDatabase />,
-    },
-    {
-      title: "Quantitative Research",
-      description: "Leverage statistical methods for your research.",
-      icon: <FaChartLine />,
-    },
-    {
-      title: "Research Consultancy",
-      description: "Get expert advice to guide your research process.",
-      icon: <FaHandshake />,
-    },
-    {
-      title: "Data Analysis + Interpretation",
-      description: "Make sense of your data and draw actionable insights.",
-      icon: <FaChartPie />,
-    },
-    {
-      title: "Instrument Design + Testing",
-      description: "Create and test tools tailored for your research needs.",
-      icon: <FaPencilRuler />,
-    },
-  ];
-  
-  const ServicesCard = () => {
-    return (
-      <div className="py-8 px-4 md:px-12">
-         <div className="text-center mt-10 md:mb-20">
-        <h1 className="text-4xl md:text-5xl font-bold text-black">Consultation Service</h1>
-        <div className="mt-5 h-1 w-20 bg-green-900 mx-auto"></div>
+const InternshipProgram = () => {
+  return (
+    <div className="max-w-7xl mx-auto px-4 py-8">
+      <header className="text-center">
+      <h1 className="text-4xl md:text-5xl mb-4 font-bold text-black"><span className='text-green-900'>Internship</span> Programme</h1>
+      <div className="mt-5 h-1 w-20 bg-green-900 mx-auto mb-6"></div>
+        <p className="text-lg text-gray-600">
+          The recent outburst of data in the 21st century is transforming businesses and how they operate. Companies rely on data-led insight to make crucial business decisions.
+        </p>
+      </header>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold text-gray-800">Objectives of the Internship</h2>
+        <ul className="mt-4 list-disc pl-6 text-gray-700">
+          <li>Quantitative and qualitative research methods</li>
+          <li>Developing competencies in statistical and qualitative analytical tools</li>
+          <li>Exposure to the field of analytics and related career options</li>
+          <li>Opportunities to work with Government and Non-Government Organizations</li>
+        </ul>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold text-gray-800">Duration of Internship</h2>
+        <p className="mt-4 text-gray-700">
+          The internship programme is held in two 3-month cycles, with recruitment taking place in January and July each year. The actual internship cycles are:
+        </p>
+        <ul className="mt-4 list-inside text-gray-700">
+          <li>Cycle 1: March to May</li>
+          <li>Cycle 2: August to October</li>
+        </ul>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold text-gray-800">Schedule of Activities</h2>
+        <ul className="mt-4 list-disc pl-6 text-gray-700">
+          <li>Weekly training sessions</li>
+          <li>Participation in all activities of the organization</li>
+          <li>Completion of online courses in data quality, research ethics, etc.</li>
+          <li>Hands-on activities in day-to-day operations</li>
+        </ul>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold text-gray-800">Payment</h2>
+        <p className="mt-4 text-gray-700">
+          There are no costs for applicants to join the programme. However, interns are not currently provided with any form of remuneration during the internship.
+        </p>
+      </section>
+
+      <div className="text-center mt-8">
+        <button
+          onClick={() => alert("Redirecting to registration form...")}
+          className="px-6 py-3 bg-green-900 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-200"
+        >
+          Click to Register
+        </button>
       </div>
-        <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-6 text-green-800">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-md p-4 flex flex-col lg:items-start items-center hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="bg-green-700 text-white flex items-center justify-center rounded-full mb-3 
-                  w-10 h-10 text-2xl sm:w-12 sm:h-12 sm:text-3xl lg:w-12 lg:h-12 lg:text-4xl">
-                {feature.icon}
-              </div>
-              <h3 className="font-semibold text-lg text-center lg:text-left">
-                {feature.title}
-              </h3>
-              <p className="text-gray-700 text-sm md:text-[12px] text-center lg:text-left">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  };
-  
-  export default ServicesCard;
-  
+    </div>
+  );
+};
+
+export default InternshipProgram;

@@ -1,82 +1,31 @@
-import React from "react";
-import {
-  FaChalkboardTeacher,
-  FaLaptopCode,
-  FaBrain,
-  FaUsers,
-  FaBookReader,
-  FaLanguage,
-  FaProjectDiagram,
-  FaTools,
-} from "react-icons/fa";
-
-const trainings = [
-  {
-    title: "Technical Skills Development",
-    description: "Master tools and technologies for your career advancement.",
-    icon: <FaLaptopCode />,
-  },
-  {
-    title: "Leadership Training",
-    description: "Develop essential leadership and management skills.",
-    icon: <FaBrain />,
-  },
-  {
-    title: "Team Building Workshops",
-    description: "Enhance collaboration and communication within your team.",
-    icon: <FaUsers />,
-  },
-  {
-    title: "Professional Certifications",
-    description: "Achieve globally recognized certifications in your field.",
-    icon: <FaBookReader />,
-  },
-  {
-    title: "Language Proficiency Training",
-    description: "Improve your communication skills in multiple languages.",
-    icon: <FaLanguage />,
-  },
-  {
-    title: "Project Management",
-    description: "Learn effective strategies to manage projects successfully.",
-    icon: <FaProjectDiagram />,
-  },
-  {
-    title: "Problem-Solving Skills",
-    description: "Strengthen your analytical and critical thinking abilities.",
-    icon: <FaTools />,
-  },
-  {
-    title: "Train-the-Trainer Programs",
-    description: "Equip trainers with the skills to deliver impactful sessions.",
-    icon: <FaChalkboardTeacher />,
-  },
+const programs = [
+  { title: "Quantitative Data Analysis with SPSS", description: "Dive into the fundamentals of quantitative data analysis using SPSS. Learn how to manage datasets, perform statistical tests, and interpret results to make data-driven decisions.", duration: "6 Days" },
+  { title: "Quantitative Data Analysis with Stata", description: "Master the use of Stata for statistical analysis, including data cleaning, regression analysis, and advanced econometric modelling.", duration: "6 Days" },
+  { title: "Excel Methods for Data Analysis", description: "Transform your Excel skills into a powerful analytical tool. Learn how to manipulate data, use advanced formulas, create pivot tables, and generate dynamic visualisations.", duration: "6 Days" },
+  { title: "GIS Methods", description: "Gain expertise in Geographic Information Systems (GIS) for spatial data analysis, mapping, and geospatial visualisation using leading GIS tools.", duration: "6 Days" },
+  { title: "Qualitative Data Analysis with ATLAS.ti", description: "Learn how to use ATLAS.ti for coding, thematic analysis, and reporting on qualitative research.", duration: "6 Days" },
+  { title: "Qualitative Data Analysis with NVivo", description: "Enhance your qualitative research skills with NVivo. This training covers data import, coding, and advanced visualisation techniques.", duration: "6 Days" },
+  { title: "Quantitative Data Analysis with GraphPad", description: "Explore the capabilities of GraphPad for statistical analysis and data visualisation, tailored to meet scientific and research needs.", duration: "6 Days" },
+  { title: "Quantitative Data Analysis with Python", description: "Learn to use Python for data cleaning, analysis, and visualisation. This course includes hands-on projects to solidify your skills.", duration: "6 Days" },
+  { title: "Quantitative Data Analysis with R", description: "Unlock the power of R for statistical computing and data analysis. Topics include data manipulation, regression models, and data visualisation.", duration: "6 Days" },
+  { title: "Principles of Monitoring and Evaluation", description: "Develop a strong foundation in Monitoring and Evaluation (M&E). This course covers designing frameworks, data collection, and evaluation methodologies.", duration: "6 Days" }
 ];
 
-const ServicesCard = () => {
+const TrainingPrograms = () => {
   return (
-    <div className="py-8 px-4 md:px-12">
-      <div className="text-center mt-10 md:mb-20">
-        <h1 className="text-4xl md:text-5xl font-bold text-black">Training Programs</h1>
+
+    <div className="bg-gray-100 min-h-screen py-12 px-4 md:px-12">
+     <div className="text-center pt-6 md:pt-12 md:pb-10">
+        <h1 className="text-4xl md:text-5xl font-bold text-black"><span className='text-green-900'>Training</span> Solutions</h1>
         <div className="mt-5 h-1 w-20 bg-green-900 mx-auto"></div>
       </div>
-      <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-6 text-green-800">Our Training Services</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {trainings.map((training, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg rounded-md p-4 flex flex-col lg:items-start items-center hover:shadow-xl transition-shadow duration-300"
-          >
-            <div className="bg-green-700 text-white flex items-center justify-center rounded-full mb-3 
-                w-10 h-10 text-2xl sm:w-12 sm:h-12 sm:text-3xl lg:w-12 lg:h-12 lg:text-4xl">
-              {training.icon}
-            </div>
-            <h3 className="font-semibold text-lg text-center lg:text-left">
-              {training.title}
-            </h3>
-            <p className="text-gray-700 text-sm md:text-[12px] text-center lg:text-left">
-              {training.description}
-            </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {programs.map((program, index) => (
+          <div key={index} className="bg-white shadow-md rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-green-800 mb-2">{program.title}</h2>
+            <p className="text-gray-600 mb-4">{program.description}</p>
+            <p className="text-sm font-medium text-gray-700">Duration: {program.duration}</p>
+            <button className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"><a href="http://" target="_blank" rel="noopener noreferrer">Register Now</a></button>
           </div>
         ))}
       </div>
@@ -84,4 +33,4 @@ const ServicesCard = () => {
   );
 };
 
-export default ServicesCard;
+export default TrainingPrograms;
