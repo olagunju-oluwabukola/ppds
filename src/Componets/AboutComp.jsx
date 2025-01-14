@@ -77,26 +77,44 @@ Our Vision is to become the leading data analysis and research consultancy firm 
           <div className="flex-1 text-sm">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Values</h2>
             <ul className="list-disc list-inside space-y-2">
-            <li>
-  <span className='text-gray-800 font-bold'>Integrity:</span> Integrity is the cornerstone of our operations. We are committed to truthfulness and transparency.
-</li>
-<li>
-  <span className='text-gray-800 font-bold'>Speed:</span> We prioritise delivering services and solutions on schedule, ensuring that our clients meet their deadlines without compromising on quality.
-</li>
-<li>
-  <span className='text-gray-800 font-bold'>Excellence:</span> Excellence is non-negotiable at PPDS. We are dedicated to producing outcomes that exceed expectations.
-</li>
-<li>
-  <span className='text-gray-800 font-bold'>Accuracy:</span> Precision is at the heart of what we do. While we deliver on time, we ensure every project is handled with minimal errors.
-</li>
-<li>
-  <span className='text-gray-800 font-bold'>Synergy:</span> By fostering strong partnerships within our team and with our clients, we create an environment where great ideas thrive, and impactful solutions are realised.
-</li>
-<li>
-  <span className='text-gray-800 font-bold'>Professionalism:</span> We value our clients’ trust and ensure their projects are handled with respect, competence, and diligence.
-</li>
+  <li>
+    <span className="text-gray-800 font-bold">
+      <span className="text-lg font-extrabold">S</span>peed:
+    </span>{" "}
+    We prioritise delivering services and solutions on schedule, ensuring that our clients meet their deadlines without compromising on quality.
+  </li>
+  <li>
+    <span className="text-gray-800 font-bold">
+      <span className="text-lg font-extrabold">H</span>onesty:
+    </span>{" "}
+    Integrity is the cornerstone of our operations. We are committed to truthfulness and transparency.
+  </li>
+  <li>
+    <span className="text-gray-800 font-bold">
+      <span className="text-lg font-extrabold">A</span>ccuracy:
+    </span>{" "}
+    Precision is at the heart of what we do. While we deliver on time, we ensure every project is handled with minimal errors.
+  </li>
+  <li>
+    <span className="text-gray-800 font-bold">
+      <span className="text-lg font-extrabold">P</span>rofessionalism:
+    </span>{" "}
+    We value our clients’ trust and ensure their projects are handled with respect, competence, and diligence.
+  </li>
+  <li>
+    <span className="text-gray-800 font-bold">
+      <span className="text-lg font-extrabold">E</span>xcellence:
+    </span>{" "}
+    Excellence is non-negotiable at PPDS. We are dedicated to producing outcomes that exceed expectations.
+  </li>
+  <li>
+    <span className="text-gray-800 font-bold">
+      <span className="text-lg font-extrabold">S</span>ynergy:
+    </span>{" "}
+    By fostering strong partnerships within our team and with our clients, we create an environment where great ideas thrive, and impactful solutions are realised.
+  </li>
+</ul>
 
-            </ul>
           </div>
         </section>
 

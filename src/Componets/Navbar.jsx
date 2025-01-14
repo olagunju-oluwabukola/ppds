@@ -70,6 +70,15 @@ const Navbar = () => {
                   >
                    Internship
                   </NavLink>
+                  <li>
+            <NavLink
+              to="/services/consultation"
+              className="block px-4 py-2 text-white hover:text-brown-400 transition duration-300"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+             Consulting
+            </NavLink>
+          </li>
                 </li>
               </ul>
             )}
@@ -138,6 +147,15 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
              Internship
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/services/consulting"
+              className="text-white hover:text-brown-400 transition duration-300"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+             Consulting
             </NavLink>
           </li>
           <li>
