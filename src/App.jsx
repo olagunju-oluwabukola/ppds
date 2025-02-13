@@ -7,6 +7,7 @@ import Training from "./Pages/Training";
 import Consultation from "./Pages/Consultation";
 import Blog from "./Pages/Blog";
 import ContactUsPage from "./Pages/ContactUsPage";
+import Internship from "./Pages/Internship";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +29,10 @@ function App() {
         },
         {
           path:'/services/internship',
+          element:<Internship/>
+        },
+        {
+          path:'/services/consultation',
           element:<Consultation/>
         },
         {

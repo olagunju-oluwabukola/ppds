@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FiTwitter, FiLinkedin, FiFacebook, FiMessageCircle } from "react-icons/fi";
+import { FiTwitter, FiLinkedin, FiFacebook, FiInstagram} from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -59,7 +59,7 @@ const Footer = () => {
             <ul className="space-y-2 text-[10px] md:text-[12px]">
               <li>
                 <NavLink
-                  to="/support/help-center"
+                  to="/contact"
                   className="hover:text-brown-400 transition duration-300"
                 >
                   Help Center
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/support/faq"
+                  to="/"
                   className="hover:text-brown-400 transition duration-300"
                 >
                   FAQ
@@ -75,7 +75,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/support/community"
+                  to="/about"
                   className="hover:text-brown-400 transition duration-300"
                 >
                   Community
@@ -83,7 +83,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to="/support/technical"
+                  to=""
                   className="hover:text-brown-400 transition duration-300"
                 >
                   Technical Support
@@ -97,33 +97,32 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Connect with Us</h3>
             <div className="flex space-x-4">
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/PPDSAnalytics" 
                 className="p-2 bg-green-700 rounded-full hover:bg-brown-500 transition duration-300"
                 aria-label="Twitter"
               >
                 <FiTwitter className="h-5 w-5 text-gray-200 hover:text-white" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/company/ProjectPartnerDataSolutions" target="_blank" rel="noopener noreferrer"
                 className="p-2 bg-green-700 rounded-full hover:bg-brown-500 transition duration-300"
                 aria-label="LinkedIn"
               >
                 <FiLinkedin className="h-5 w-5 text-gray-200 hover:text-white" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/ProjectPartnerNigeria" target="_blank" rel="noopener noreferrer"
                 className="p-2 bg-green-700 rounded-full hover:bg-brown-500 transition duration-300"
                 aria-label="Facebook"
               >
                 <FiFacebook className="h-5 w-5 text-gray-200 hover:text-white" />
               </a>
-              <a
-                href="https://whatsapp.com"
-                className="p-2 bg-green-700 rounded-full hover:bg-brown-500 transition duration-300"
-                aria-label="WhatsApp"
-              >
-                <FiMessageCircle className="h-5 w-5 text-gray-200 hover:text-white" />
-              </a>
+            <a
+                                href="https://instagram.com/PPDSAnalytics" target="_blank" rel="noopener noreferrer"
+                                className="text-green-700 hover:text-green-900"
+                              >
+                                <FiInstagram  className="h-5 w-5 text-gray-200 hover:text-white" />
+                              </a>
             </div>
           </div>
         </div>

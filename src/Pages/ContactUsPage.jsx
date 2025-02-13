@@ -37,10 +37,10 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 pt-5 md:pt-12 min-h-screen">
       {/* Header */}
       <div className="text-center pt-10 md:pt-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-black">
+        <h1 className="text-3xl md:text-5xl font-bold text-black">
           <span className="text-green-900">Contact</span> Us
         </h1>
         <div className="mt-5 h-1 w-20 bg-green-900 mx-auto"></div>
@@ -163,25 +163,25 @@ const ContactPage = () => {
                 <h3 className="text-lg font-medium mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://facebook.com/ProjectPartnerNigeria"
+                    href="https://facebook.com/ProjectPartnerNigeria" target="_blank" rel="noopener noreferrer"
                     className="text-green-700 hover:text-green-900"
                   >
                     <FaFacebook size={24} />
                   </a>
                   <a
-                    href="https://twitter.com/PPDSAnalytics"
+                    href="https://twitter.com/PPDSAnalytics" target="_blank" rel="noopener noreferrer"
                     className="text-green-700 hover:text-green-900"
                   >
                     <FaTwitter size={24} />
                   </a>
                   <a
-                    href="https://linkedin.com/company/ProjectPartnerDataSolutions"
+                    href="https://linkedin.com/company/ProjectPartnerDataSolutions" target="_blank" rel="noopener noreferrer"
                     className="text-green-700 hover:text-green-900"
                   >
                     <FaLinkedin size={24} />
                   </a>
                   <a
-                    href="https://instagram.com/PPDSAnalytics"
+                    href="https://instagram.com/PPDSAnalytics" target="_blank" rel="noopener noreferrer"
                     className="text-green-700 hover:text-green-900"
                   >
                     <FaInstagram size={24} />

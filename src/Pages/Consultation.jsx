@@ -1,62 +1,87 @@
-const InternshipProgram = () => {
+
+import {NavLink} from 'react-router-dom';
+const ConsultancyServices = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <header className="text-center">
-      <h1 className="text-4xl md:text-5xl mb-4 font-bold text-black"><span className='text-green-900'>Internship</span> Programme</h1>
-      <div className="mt-5 h-1 w-20 bg-green-900 mx-auto mb-6"></div>
-        <p className="text-lg text-gray-600">
-          The recent outburst of data in the 21st century is transforming businesses and how they operate. Companies rely on data-led insight to make crucial business decisions.
-        </p>
-      </header>
+    <div className=" mx-6 md:mx-10">
+          <div className='text-center pt-6 md:pt-12 md:pb-10'>
+          <h1 className="text-2xl md:text-5xl mb-4 font-bold text-black"><span className='text-green-900'>Consultancy</span> Services</h1>
+          <div className="mt-5 h-1 w-20 bg-green-900 mx-auto mb-6"></div>
+          </div>
+      <p className="text-center mb-6 text-sm md:text-lg text-gray-600">
+        At <span className="font-semibold ">Project Partner Data Solutions (PPDS)</span>, we empower businesses, organisations, and individuals with data-driven insights to drive informed decision-making and sustainable growth. Our consultancy services are designed to address unique challenges, delivering high-quality solutions that make an impact.
+      </p>
 
-      <section className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">Objectives of the Internship</h2>
-        <ul className="mt-4 list-disc pl-6 text-gray-700">
-          <li>Quantitative and qualitative research methods</li>
-          <li>Developing competencies in statistical and qualitative analytical tools</li>
-          <li>Exposure to the field of analytics and related career options</li>
-          <li>Opportunities to work with Government and Non-Government Organizations</li>
-        </ul>
-      </section>
+      <h2 className="text-2xl md:text-3xl font-bold text-green-600 mb-4">Our Expertise</h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-5">
+        <div className="bg-gray-200 shadow-lg rounded-lg p-6">
+          <h3 className="text-xl font-bold text-black mb-2">Quantitative Research Consultancy</h3>
+          <ul className="list-disc list-inside text-black">
+            <li>Design and execution of surveys, experiments, and statistical analyses.</li>
+            <li>Application of advanced statistical tools to uncover actionable insights.</li>
+            <li>Clear, data-driven reports with practical recommendations.</li>
+          </ul>
+        </div>
+        
+        <div className="bg-gray-300 shadow-lg rounded-lg p-6">
+          <h3 className="text-xl font-bold text-black mb-2">Qualitative Research Consultancy</h3>
+          <ul className="list-disc list-inside text-black">
+            <li>Conducting in-depth interviews, focus group discussions, and ethnographic studies.</li>
+            <li>Thematic and content analysis to extract deep insights.</li>
+            <li>Rich, narrative reports highlighting key findings and strategic recommendations.</li>
+          </ul>
+        </div>
 
-      <section className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">Duration of Internship</h2>
-        <p className="mt-4 text-gray-700">
-          The internship programme is held in two 3-month cycles, with recruitment taking place in January and July each year. The actual internship cycles are:
-        </p>
-        <ul className="mt-4 list-inside text-gray-700">
-          <li>Cycle 1: March to May</li>
-          <li>Cycle 2: August to October</li>
-        </ul>
-      </section>
+        <div className="bg-gray-300 shadow-lg rounded-lg p-6">
+          <h3 className="text-xl font-bold text-black mb-2">Field Data Collection Services</h3>
+          <ul className="list-disc list-inside text-black">
+            <li>End-to-end data collection solutions for both quantitative and qualitative studies.</li>
+            <li>Deployment of trained field teams with strict quality control measures.</li>
+            <li>Use of digital tools and software for enhanced efficiency and accuracy.</li>
+          </ul>
+        </div>
 
-      <section className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">Schedule of Activities</h2>
-        <ul className="mt-4 list-disc pl-6 text-gray-700">
-          <li>Weekly training sessions</li>
-          <li>Participation in all activities of the organization</li>
-          <li>Completion of online courses in data quality, research ethics, etc.</li>
-          <li>Hands-on activities in day-to-day operations</li>
-        </ul>
-      </section>
-
-      <section className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">Payment</h2>
-        <p className="mt-4 text-gray-700">
-          There are no costs for applicants to join the programme. However, interns are not currently provided with any form of remuneration during the internship.
-        </p>
-      </section>
-
-      <div className="text-center mt-8">
-        <button
-          onClick={() => alert("Redirecting to registration form...")}
-          className="px-6 py-3 bg-green-900 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-200"
-        >
-          Click to Register
-        </button>
+        <div className="bg-gray-200 shadow-lg rounded-lg p-6">
+          <h3 className="text-xl font-bold text-black mb-2">Software Procurement & ATLAS.ti Certification</h3>
+          <ul className="list-disc list-inside text-black">
+            <li>We are a Certified ATLAS.ti Reseller, providing the latest versions of the software.</li>
+            <li>Procurement services for industry-standard research and data analysis tools.</li>
+            <li>Comprehensive software support and training for clients.</li>
+          </ul>
+        </div>
       </div>
+
+      <h2 className="text-2xl font-bold text-green-600 mt-8 mb-4">Why Choose PPDS?</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div className="flex items-start">
+          <span className="text-green-600 mr-2">✔</span>
+          <p className="text-black"><span className="font-semibold">Expertise:</span> Our team brings years of experience and industry-leading methodologies.</p>
+        </div>
+        <div className="flex items-start">
+          <span className="text-green-600 mr-2">✔</span>
+          <p className="text-black"><span className="font-semibold">Customised Solutions:</span> We tailor our services to align with your unique goals and challenges.</p>
+        </div>
+        <div className="flex items-start">
+          <span className="text-green-600 mr-2">✔</span>
+          <p className="text-black"><span className="font-semibold">Innovative Approach:</span> We leverage cutting-edge tools and techniques for high-quality results.</p>
+        </div>
+        <div className="flex items-start">
+          <span className="text-green-600 mr-2">✔</span>
+          <p className="text-black"><span className="font-semibold">Client-Centric Focus:</span> Your success is our priority—we work closely with you at every step.</p>
+        </div>
+      </div>
+
+      <h2 className="text-2xl font-bold text-green-600 mb-4">Let’s Work Together</h2>
+      <p className="text-black mb-6">
+        Partner with PPDS to unlock the full potential of your data. Whether you need market insights, process improvement, or evidence-based decision-making, we’re here to help.
+      </p>
+      <NavLink to='/contact'
+        className="inline-block bg-green-900 text-white px-6 py-4 mb-7 rounded-lg hover:bg-green-700 transition-colors"
+      >
+      Contact us today
+      </NavLink>
     </div>
   );
 };
 
-export default InternshipProgram;
+export default ConsultancyServices;

@@ -151,7 +151,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/services/consulting"
+              to="/services/consultation"
               className="text-white hover:text-brown-400 transition duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
