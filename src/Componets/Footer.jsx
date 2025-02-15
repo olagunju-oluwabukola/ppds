@@ -119,7 +119,7 @@ const Footer = () => {
               </a>
             <a
                                 href="https://instagram.com/PPDSAnalytics" target="_blank" rel="noopener noreferrer"
-                                className="text-green-700 hover:text-green-900"
+                               className="p-2 bg-green-700 rounded-full hover:bg-brown-500 transition duration-300"
                               >
                                 <FiInstagram  className="h-5 w-5 text-gray-200 hover:text-white" />
                               </a>

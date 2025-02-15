@@ -25,7 +25,7 @@ const TrainingPrograms = () => {
             <h2 className="text-xl font-semibold text-green-800 mb-2">{program.title}</h2>
             <p className="text-gray-600 mb-4">{program.description}</p>
             <p className="text-sm font-medium text-gray-700">Duration: {program.duration}</p>
-            <button className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"><a href="http://" target="_blank" rel="noopener noreferrer">Register Now</a></button>
+            <button className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsR_-EMqyaK7fLU5MMnW3ulIROJ0L1GPn2GaZTAlJl8bnNSw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Register Now</a></button>
           </div>
         ))}
       </div>

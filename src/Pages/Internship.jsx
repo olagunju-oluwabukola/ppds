@@ -56,7 +56,8 @@ const InternshipProgram = () => {
             onClick={() => alert("Redirecting to registration form...")}
             className="px-6 py-3 bg-green-900 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-200"
           >
-            Click to Register
+             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsR_-EMqyaK7fLU5MMnW3ulIROJ0L1GPn2GaZTAlJl8bnNSw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Click to Register</a>
+            
           </button>
         </div>
       </div>
